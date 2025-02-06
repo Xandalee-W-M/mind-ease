@@ -2,40 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MindEase</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <h1>MindEase</h1>
-    <p>Your mental wellness toolkit</p>
-  </header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MindEase</title>
+        <link rel="stylesheet" href="styles/styles.css">
+          <link rel="stylesheet" href="styles/breathing.css">
+            <link rel="stylesheet" href="styles/resources.css">
+              <link rel="stylesheet" href="styles/affirmations.css">
+                <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+                </head>
+                <body>
+                  <header>
+                      <h1>MindEase</h1>
+                          <p>Your mental wellness toolkit</p>
+                            </header>
 
-  <section class="mood-tracker">
-    <h2>How are you feeling today?</h2>
-    <div class="emojis">
-      <span data-mood="happy">😊</span>
-      <span data-mood="sad">😢</span>
-      <span data-mood="angry">😠</span>
-      <span data-mood="calm">😌</span>
-      <span data-mood="stressed">😩</span>
-    </div>
-    <p id="mood-result">Select your mood above!</p>
-  </section>
+                              <!-- Mood Tracker -->
+                                <section class="mood-tracker">
+                                    <h2>How are you feeling today?</h2>
+                                        <div class="emojis">
+                                              <span data-mood="happy">😊</span>
+                                                    <span data-mood="sad">😢</span>
+                                                          <span data-mood="angry">😠</span>
+                                                                <span data-mood="calm">😌</span>
+                                                                      <span data-mood="stressed">😩</span>
+                                                                          </div>
+                                                                              <p id="mood-result">Select your mood above!</p>
+                                                                                </section>
 
-  <section class="journal">
-    <h2>Journal Your Thoughts</h2>
-    <textarea id="journal-entry" placeholder="Write your thoughts here..."></textarea>
-    <button id="save-entry">Save Entry</button>
-    <p id="journal-message"></p>
-  </section>
+                                                                                  <!-- Journal Tool -->
+                                                                                    <section class="journal">
+                                                                                        <h2>Journal Your Thoughts</h2>
+                                                                                            <textarea id="journal-entry" placeholder="Write your thoughts here..."></textarea>
+                                                                                                <button id="save-entry">Save Entry</button>
+                                                                                                    <p id="journal-message"></p>
+                                                                                                      </section>
 
-  <footer>
-    <p>© 2025 MindEase. All rights reserved.</p>
-  </footer>
+                                                                                                        <!-- Guided Breathing Exercise -->
+                                                                                                          <section class="breathing-exercise">
+                                                                                                              <h2>Guided Breathing Exercise</h2>
+                                                                                                                  <div class="circle"></div>
+                                                                                                                      <button id="start-breathing">Start</button>
+                                                                                                                          <p id="breathing-instruction">Breathe in...</p>
+                                                                                                                            </section>
 
-  <script src="script.js"></script>
-</body>
-</html>
+                                                                                                                              <!-- Resource Library -->
+                                                                                                                                <section class="resource-library">
+                                                                                                                                    <h2>Resource Library</h2>
+                                                                                                                                        <input type="text" id="search" placeholder="Search resources...">
+                                                                                                                                            <div class="resources">
+                                                                                                                                                  <div class="resource" data-tags="stress anxiety">
+                                                                                                                                                          <h3>5 Tips to Manage Stress</h3>
+                                                                                                                                                                  <p>Learn how to reduce stress in your daily life.</p>
+                                                                                                                                                                          <a href="#">Read More</a>
+                                                                                                                                                                                </div>
+                                                                                                                                                                                      <div class="resource" data-tags="meditation calm">
+                                                                                                                                                                                              <h3>Guided Meditation for Beginners</h3>
+                                                                                                                                                                                                      <p>A 10-minute meditation to help you relax.</p>
+                                                                                                                                                                                                              <a href="#">Watch Video</a>
+                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                          </section>
+
+                                                                                                                                                                                                                            <!-- Daily Affirmations -->
+                                                                                                                                                                                                                              <section class="affirmations">
+                                                                                                                                                                                                                                  <h2>Daily Affirmation</h2>
+                                                                                                                                                                                                                                      <p id="affirmation-text">You are capable of amazing things!</p>
+                                                                                                                                                                                                                                          <button id="new-affirmation">New Affirmation</button>
+                                                                                                                                                                                                                                            </section>
+
+                                                                                                                                                                                                                                              <footer>
+                                                                                                                                                                                                                                                  <p>© 2025 MindEase. All rights reserved.</p>
+                                                                                                                                                                                                                                                    </footer>
+
+                                                                                                                                                                                                                                                      <!-- JavaScript -->
+                                                                                                                                                                                                                                                        <script src="scripts/script.js"></script>
+                                                                                                                                                                                                                                                          <script src="scripts/breathing.js"></script>
+                                                                                                                                                                                                                                                            <script src="scripts/resources.js"></script>
+                                                                                                                                                                                                                                                              <script src="scripts/affirmations.js"></script>
+                                                                                                                                                                                                                                                              </body>
+                                                                                                                                                                                                                                                              </html>
