@@ -1,243 +1,252 @@
 /* General Styles */
 body {
   font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #E6E6FA, #FFDAB9); /* Soft lavender to peach */
-      color: #333; /* Dark gray text */
-        margin: 0;
-          padding: 0;
-            line-height: 1.6;
-            }
+    background-image: url('../assets/images/body-bg.jpg'); /* Body background */
+      background-size: cover;
+        background-position: center;
+          color: #333;
+            margin: 0;
+              padding: 0;
+                line-height: 1.6;
+                }
 
-            /* Header Styles */
-            header {
-              background: linear-gradient(135deg, #FF6F61, #FFD700); /* Coral to gold */
-                padding: 2rem;
-                  text-align: center;
-                    color: white; /* White text for contrast */
-                      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-                      }
+                /* Header Styles */
+                header {
+                  background-image: url('../assets/images/header-bg.jpg'); /* Header background */
+                    background-size: cover;
+                      background-position: center;
+                        padding: 2rem;
+                          text-align: center;
+                            color: white;
+                            }
 
-                      header h1 {
-                        font-size: 3rem;
-                          color: white; /* White text for contrast */
-                            margin: 0;
-                              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
-                              }
-
-                              header p {
-                                font-size: 1.2rem;
-                                  color: white; /* White text for contrast */
-                                    opacity: 0.9; /* Slightly transparent */
+                            header h1 {
+                              font-size: 3rem;
+                                color: white;
+                                  margin: 0;
+                                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
                                     }
 
-                                    /* Mood Tracker Styles */
-                                    .mood-tracker {
-                                      text-align: center;
-                                        margin: 2rem auto;
-                                          padding: 1rem;
-                                            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-                                              border-radius: 10px;
-                                                max-width: 600px;
-                                                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                                                  }
+                                    header p {
+                                      font-size: 1.2rem;
+                                        color: white;
+                                          opacity: 0.9;
+                                          }
 
-                                                  .emojis {
-                                                    display: flex;
-                                                      justify-content: space-around;
-                                                        margin: 1rem 0;
+                                          /* Mood Tracker Styles */
+                                          .mood-tracker {
+                                            text-align: center;
+                                              margin: 2rem auto;
+                                                padding: 1rem;
+                                                  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+                                                    border-radius: 10px;
+                                                      max-width: 600px;
+                                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                                                         }
 
-                                                        .emojis span {
-                                                          font-size: 2.5rem;
-                                                            cursor: pointer;
-                                                              transition: transform 0.2s;
+                                                        .emojis {
+                                                          display: flex;
+                                                            justify-content: space-around;
+                                                              margin: 1rem 0;
                                                               }
 
-                                                              .emojis span:hover {
-                                                                transform: scale(1.2);
-                                                                }
-
-                                                                #mood-result {
-                                                                  font-size: 1.5rem;
-                                                                    color: #ff6f61;
+                                                              .emojis span {
+                                                                font-size: 2.5rem;
+                                                                  cursor: pointer;
+                                                                    transition: transform 0.2s;
                                                                     }
 
-                                                                    /* Journal Tool Styles */
-                                                                    .journal {
-                                                                      text-align: center;
-                                                                        margin: 2rem auto;
-                                                                          padding: 1rem;
-                                                                            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-                                                                              border-radius: 10px;
-                                                                                max-width: 600px;
-                                                                                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                                                                                  }
+                                                                    .emojis span:hover {
+                                                                      transform: scale(1.2);
+                                                                      }
 
-                                                                                  textarea {
-                                                                                    width: 100%;
-                                                                                      height: 150px;
-                                                                                        padding: 1rem;
-                                                                                          font-size: 1rem;
-                                                                                            border: 1px solid #ccc;
-                                                                                              border-radius: 5px;
-                                                                                                margin-bottom: 1rem;
-                                                                                                }
+                                                                      #mood-result {
+                                                                        font-size: 1.5rem;
+                                                                          color: #ff6f61;
+                                                                          }
 
-                                                                                                button {
-                                                                                                  padding: 0.5rem 1rem;
-                                                                                                    font-size: 1rem;
-                                                                                                      background: #ff6f61;
-                                                                                                        color: white;
-                                                                                                          border: none;
-                                                                                                            border-radius: 5px;
-                                                                                                              cursor: pointer;
-                                                                                                                transition: background 0.3s;
-                                                                                                                }
+                                                                          /* Journal Tool Styles */
+                                                                          .journal {
+                                                                            text-align: center;
+                                                                              margin: 2rem auto;
+                                                                                padding: 1rem;
+                                                                                  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+                                                                                    border-radius: 10px;
+                                                                                      max-width: 600px;
+                                                                                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                                                        }
 
-                                                                                                                button:hover {
-                                                                                                                  background: #ff3b2f;
-                                                                                                                  }
+                                                                                        textarea {
+                                                                                          width: 100%;
+                                                                                            height: 150px;
+                                                                                              padding: 1rem;
+                                                                                                font-size: 1rem;
+                                                                                                  border: 1px solid #ccc;
+                                                                                                    border-radius: 5px;
+                                                                                                      margin-bottom: 1rem;
+                                                                                                      }
 
-                                                                                                                  #journal-message {
-                                                                                                                    font-size: 1rem;
-                                                                                                                      color: #555;
-                                                                                                                        margin-top: 1rem;
+                                                                                                      button {
+                                                                                                        padding: 0.5rem 1rem;
+                                                                                                          font-size: 1rem;
+                                                                                                            background: #ff6f61;
+                                                                                                              color: white;
+                                                                                                                border: none;
+                                                                                                                  border-radius: 5px;
+                                                                                                                    cursor: pointer;
+                                                                                                                      transition: background 0.3s;
+                                                                                                                      }
+
+                                                                                                                      button:hover {
+                                                                                                                        background: #ff3b2f;
                                                                                                                         }
 
-                                                                                                                        /* Breathing Exercise Styles */
-                                                                                                                        .breathing-exercise {
-                                                                                                                          text-align: center;
-                                                                                                                            margin: 2rem auto;
-                                                                                                                              padding: 1rem;
-                                                                                                                                background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-                                                                                                                                  border-radius: 10px;
-                                                                                                                                    max-width: 600px;
-                                                                                                                                      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                                                                                                                                      }
+                                                                                                                        #journal-message {
+                                                                                                                          font-size: 1rem;
+                                                                                                                            color: #555;
+                                                                                                                              margin-top: 1rem;
+                                                                                                                              }
 
-                                                                                                                                      .circle {
-                                                                                                                                        width: 100px;
-                                                                                                                                          height: 100px;
-                                                                                                                                            background: #ff6f61;
-                                                                                                                                              border-radius: 50%;
-                                                                                                                                                margin: 2rem auto;
-                                                                                                                                                  animation: breathe 8s infinite;
+                                                                                                                              /* Breathing Exercise Styles */
+                                                                                                                              .breathing-exercise {
+                                                                                                                                text-align: center;
+                                                                                                                                  margin: 2rem auto;
+                                                                                                                                    padding: 1rem;
+                                                                                                                                      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+                                                                                                                                        border-radius: 10px;
+                                                                                                                                          max-width: 600px;
+                                                                                                                                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                                                                                                              background-image: url('../assets/images/breathing-bg.jpg'); /* Breathing background */
+                                                                                                                                                background-size: cover;
+                                                                                                                                                  background-position: center;
                                                                                                                                                   }
 
-                                                                                                                                                  @keyframes breathe {
-                                                                                                                                                    0%, 100% { transform: scale(1); }
-                                                                                                                                                      50% { transform: scale(1.5); }
-                                                                                                                                                      }
+                                                                                                                                                  .circle {
+                                                                                                                                                    width: 100px;
+                                                                                                                                                      height: 100px;
+                                                                                                                                                        background: #ff6f61;
+                                                                                                                                                          border-radius: 50%;
+                                                                                                                                                            margin: 2rem auto;
+                                                                                                                                                              animation: breathe 8s infinite;
+                                                                                                                                                              }
 
-                                                                                                                                                      /* Resource Library Styles */
-                                                                                                                                                      .resource-library {
-                                                                                                                                                        text-align: center;
-                                                                                                                                                          margin: 2rem auto;
-                                                                                                                                                            padding: 1rem;
-                                                                                                                                                              background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-                                                                                                                                                                border-radius: 10px;
-                                                                                                                                                                  max-width: 800px;
-                                                                                                                                                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                                                                                                                                                                    }
+                                                                                                                                                              @keyframes breathe {
+                                                                                                                                                                0%, 100% { transform: scale(1); }
+                                                                                                                                                                  50% { transform: scale(1.5); }
+                                                                                                                                                                  }
 
-                                                                                                                                                                    #search {
-                                                                                                                                                                      width: 80%;
-                                                                                                                                                                        padding: 0.5rem;
-                                                                                                                                                                          font-size: 1rem;
-                                                                                                                                                                            border: 1px solid #ccc;
-                                                                                                                                                                              border-radius: 5px;
-                                                                                                                                                                                margin-bottom: 1rem;
-                                                                                                                                                                                }
-
-                                                                                                                                                                                .resources {
-                                                                                                                                                                                  display: flex;
-                                                                                                                                                                                    flex-wrap: wrap;
-                                                                                                                                                                                      justify-content: space-around;
+                                                                                                                                                                  /* Resource Library Styles */
+                                                                                                                                                                  .resource-library {
+                                                                                                                                                                    text-align: center;
+                                                                                                                                                                      margin: 2rem auto;
+                                                                                                                                                                        padding: 1rem;
+                                                                                                                                                                          background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+                                                                                                                                                                            border-radius: 10px;
+                                                                                                                                                                              max-width: 800px;
+                                                                                                                                                                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                                                                                                                                                  background-image: url('../assets/images/resource-bg.jpg'); /* Resource background */
+                                                                                                                                                                                    background-size: cover;
+                                                                                                                                                                                      background-position: center;
                                                                                                                                                                                       }
 
-                                                                                                                                                                                      .resource {
-                                                                                                                                                                                        background: white;
-                                                                                                                                                                                          border: 1px solid #ddd;
-                                                                                                                                                                                            border-radius: 10px;
-                                                                                                                                                                                              padding: 1rem;
-                                                                                                                                                                                                margin: 1rem;
-                                                                                                                                                                                                  width: 45%;
-                                                                                                                                                                                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                                                                                                                                                                                                      transition: transform 0.3s, box-shadow 0.3s;
-                                                                                                                                                                                                      }
+                                                                                                                                                                                      #search {
+                                                                                                                                                                                        width: 80%;
+                                                                                                                                                                                          padding: 0.5rem;
+                                                                                                                                                                                            font-size: 1rem;
+                                                                                                                                                                                              border: 1px solid #ccc;
+                                                                                                                                                                                                border-radius: 5px;
+                                                                                                                                                                                                  margin-bottom: 1rem;
+                                                                                                                                                                                                  }
 
-                                                                                                                                                                                                      .resource:hover {
-                                                                                                                                                                                                        transform: translateY(-5px);
-                                                                                                                                                                                                          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-                                                                                                                                                                                                          }
+                                                                                                                                                                                                  .resources {
+                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                      flex-wrap: wrap;
+                                                                                                                                                                                                        justify-content: space-around;
+                                                                                                                                                                                                        }
 
-                                                                                                                                                                                                          .resource h3 {
-                                                                                                                                                                                                            font-size: 1.5rem;
-                                                                                                                                                                                                              color: #ff6f61;
-                                                                                                                                                                                                                margin: 0.5rem 0;
-                                                                                                                                                                                                                }
+                                                                                                                                                                                                        .resource {
+                                                                                                                                                                                                          background: white;
+                                                                                                                                                                                                            border: 1px solid #ddd;
+                                                                                                                                                                                                              border-radius: 10px;
+                                                                                                                                                                                                                padding: 1rem;
+                                                                                                                                                                                                                  margin: 1rem;
+                                                                                                                                                                                                                    width: 45%;
+                                                                                                                                                                                                                      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                                                                                                                                                                                        transition: transform 0.3s, box-shadow 0.3s;
+                                                                                                                                                                                                                        }
 
-                                                                                                                                                                                                                .resource p {
-                                                                                                                                                                                                                  font-size: 1rem;
-                                                                                                                                                                                                                    color: #555;
-                                                                                                                                                                                                                      margin: 0.5rem 0;
-                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                        .resource:hover {
+                                                                                                                                                                                                                          transform: translateY(-5px);
+                                                                                                                                                                                                                            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+                                                                                                                                                                                                                            }
 
-                                                                                                                                                                                                                      .resource a {
-                                                                                                                                                                                                                        display: inline-block;
-                                                                                                                                                                                                                          padding: 0.5rem 1rem;
-                                                                                                                                                                                                                            background: #ff6f61;
-                                                                                                                                                                                                                              color: white;
-                                                                                                                                                                                                                                text-decoration: none;
-                                                                                                                                                                                                                                  border-radius: 5px;
-                                                                                                                                                                                                                                    transition: background 0.3s;
-                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                            .resource h3 {
+                                                                                                                                                                                                                              font-size: 1.5rem;
+                                                                                                                                                                                                                                color: #ff6f61;
+                                                                                                                                                                                                                                  margin: 0.5rem 0;
+                                                                                                                                                                                                                                  }
 
-                                                                                                                                                                                                                                    .resource a:hover {
-                                                                                                                                                                                                                                      background: #ff3b2f;
-                                                                                                                                                                                                                                      }
+                                                                                                                                                                                                                                  .resource p {
+                                                                                                                                                                                                                                    font-size: 1rem;
+                                                                                                                                                                                                                                      color: #555;
+                                                                                                                                                                                                                                        margin: 0.5rem 0;
+                                                                                                                                                                                                                                        }
 
-                                                                                                                                                                                                                                      /* Daily Affirmations Styles */
-                                                                                                                                                                                                                                      .affirmations {
-                                                                                                                                                                                                                                        text-align: center;
-                                                                                                                                                                                                                                          margin: 2rem auto;
-                                                                                                                                                                                                                                            padding: 2rem;
-                                                                                                                                                                                                                                              background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-                                                                                                                                                                                                                                                border-radius: 10px;
-                                                                                                                                                                                                                                                  max-width: 600px;
-                                                                                                                                                                                                                                                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                                                                                                                                                                                                                                                      background-image: url('../assets/images/affirmation-bg.jpg'); /* Retro background image */
-                                                                                                                                                                                                                                                        background-size: cover;
-                                                                                                                                                                                                                                                          background-position: center;
-                                                                                                                                                                                                                                                            color: white;
-                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                        .resource a {
+                                                                                                                                                                                                                                          display: inline-block;
+                                                                                                                                                                                                                                            padding: 0.5rem 1rem;
+                                                                                                                                                                                                                                              background: #ff6f61;
+                                                                                                                                                                                                                                                color: white;
+                                                                                                                                                                                                                                                  text-decoration: none;
+                                                                                                                                                                                                                                                    border-radius: 5px;
+                                                                                                                                                                                                                                                      transition: background 0.3s;
+                                                                                                                                                                                                                                                      }
 
-                                                                                                                                                                                                                                                            #affirmation-text {
-                                                                                                                                                                                                                                                              font-size: 1.5rem;
-                                                                                                                                                                                                                                                                font-style: italic;
-                                                                                                                                                                                                                                                                  margin: 1rem 0;
-                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                      .resource a:hover {
+                                                                                                                                                                                                                                                        background: #ff3b2f;
+                                                                                                                                                                                                                                                        }
 
-                                                                                                                                                                                                                                                                  #new-affirmation {
-                                                                                                                                                                                                                                                                    padding: 0.5rem 1rem;
-                                                                                                                                                                                                                                                                      font-size: 1rem;
-                                                                                                                                                                                                                                                                        background: #ff6f61;
-                                                                                                                                                                                                                                                                          color: white;
-                                                                                                                                                                                                                                                                            border: none;
-                                                                                                                                                                                                                                                                              border-radius: 5px;
-                                                                                                                                                                                                                                                                                cursor: pointer;
-                                                                                                                                                                                                                                                                                  transition: background 0.3s;
-                                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                        /* Daily Affirmations Styles */
+                                                                                                                                                                                                                                                        .affirmations {
+                                                                                                                                                                                                                                                          text-align: center;
+                                                                                                                                                                                                                                                            margin: 2rem auto;
+                                                                                                                                                                                                                                                              padding: 2rem;
+                                                                                                                                                                                                                                                                background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+                                                                                                                                                                                                                                                                  border-radius: 10px;
+                                                                                                                                                                                                                                                                    max-width: 600px;
+                                                                                                                                                                                                                                                                      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                                                                                                                                                                                                                                                        background-image: url('../assets/images/affirmation-bg.jpg'); /* Affirmation background */
+                                                                                                                                                                                                                                                                          background-size: cover;
+                                                                                                                                                                                                                                                                            background-position: center;
+                                                                                                                                                                                                                                                                              color: white;
+                                                                                                                                                                                                                                                                              }
 
-                                                                                                                                                                                                                                                                                  #new-affirmation:hover {
-                                                                                                                                                                                                                                                                                    background: #ff3b2f;
+                                                                                                                                                                                                                                                                              #affirmation-text {
+                                                                                                                                                                                                                                                                                font-size: 1.5rem;
+                                                                                                                                                                                                                                                                                  font-style: italic;
+                                                                                                                                                                                                                                                                                    margin: 1rem 0;
                                                                                                                                                                                                                                                                                     }
 
-                                                                                                                                                                                                                                                                                    /* Footer Styles */
-                                                                                                                                                                                                                                                                                    footer {
-                                                                                                                                                                                                                                                                                      text-align: center;
-                                                                                                                                                                                                                                                                                        padding: 1rem;
-                                                                                                                                                                                                                                                                                          background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
-                                                                                                                                                                                                                                                                                            margin-top: 2rem;
-                                                                                                                                                                                                                                                                                              box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-                                                                                                                                                                                                                                                                                              }
+                                                                                                                                                                                                                                                                                    #new-affirmation {
+                                                                                                                                                                                                                                                                                      padding: 0.5rem 1rem;
+                                                                                                                                                                                                                                                                                        font-size: 1rem;
+                                                                                                                                                                                                                                                                                          background: #ff6f61;
+                                                                                                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                                                                                                              border: none;
+                                                                                                                                                                                                                                                                                                border-radius: 5px;
+                                                                                                                                                                                                                                                                                                  cursor: pointer;
+                                                                                                                                                                                                                                                                                                    transition: background 0.3s;
+                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                    #new-affirmation:hover {
+                                                                                                                                                                                                                                                                                                      background: #ff3b2f;
+                                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                                      /* Footer Styles */
+                                                                                                                                                                                                                                                                                                      footer {
+                                                                                                                                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                                                                                                                                          padding: 1rem;
+                                                                                                                                                                                                                                                                                                            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+                                                                                                                                                                                                                                                                                                              margin-top: 2rem;
+                                                                                                                                                                                                                                                                                                                box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+                                                                                                                                                                                                                                                                                                                }
